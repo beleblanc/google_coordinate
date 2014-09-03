@@ -1,3 +1,4 @@
+require 'rubygems'
 require "google_coordinates/version"
 require 'httparty'
 
@@ -8,7 +9,7 @@ end
 module GoogleCoordinates
   class << self
     
-    attr_accessor :api_key
+    attr_accessor :api_key,:team_id
     
     def configuration
       yield self
